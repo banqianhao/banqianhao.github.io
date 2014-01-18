@@ -18,14 +18,14 @@ body {
     font: 15.04px Arial, sans-serif;
     text-align: center;
 }
-
+/*
 ::selection {
  background:#AABDB4;
 }
 ::-moz-selection{
  background:#AABDB4;
 }
-
+*/
 h1, h2, h3, h4, h5, h6 {
 font-size: 100%; }
 
