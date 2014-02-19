@@ -65,7 +65,7 @@ intitle: 指令返回的是页面title中包含关键词的页面。
 ###8.allintitle
 allintitle:搜索返回的是页面标题中包含关键词的文件。
 
-例如 ：allintitle:DFH 正则表达式
+例如 ：allintitle:DFA 正则表达式
 
 返回的是标题中中既包含“DFA”，也包含“正则表达式”的页面
 
