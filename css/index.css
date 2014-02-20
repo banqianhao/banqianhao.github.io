@@ -1,7 +1,7 @@
 .posts {
     list-style-type: none;
-    margin-bottom: 2em;
     float: left;
+    padding-left: 0px;
 }
 
 .posts li {
@@ -12,14 +12,12 @@
     color: #AABDB4;
     font-size: small;
     display:inline-block;
-    width: 9em;
+    width: 11em;
 }
 
 .IndexP {
-    margin-top: 1em;
     margin-bottom: 2em;
-    border-top: solid 1px #B3AD9B;
-    padding-top: 1em;
+    margin-top: 2em;
 }
 
 h1 {
