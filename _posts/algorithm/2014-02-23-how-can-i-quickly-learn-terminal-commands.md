@@ -10,7 +10,7 @@ tags : [terminal, os, computer]
 
 ![pict](/images/terminal-commans/ku-xlarge.jpg)
 
-拿鼠标点来点去到目前为止只会让你远离Ubuntu。对于那些真的想使用"另一个操作系统"的人，学习终端命令是重要的一步。在 [Ask Ubuntu](http://askubuntu.com/?utm_source=lifehacker&utm_medium=syndication&utm_campaign=crowdhacker&utm_content=ubuntu-99)上，专家们提供了学习shell最好的方法。
+到目前为止拿鼠标点来点去只会让你远离Ubuntu。对于那些真的想使用"另一个操作系统"的人，学习终端命令是重要的一步。在 [Ask Ubuntu](http://askubuntu.com/?utm_source=lifehacker&utm_medium=syndication&utm_campaign=crowdhacker&utm_content=ubuntu-99)上，专家们提供了学习shell最好的方法。
 
 在我看来，学习如何使用终端是学习如何使用Ubuntu的先决条件。所以我试图找出最好的学习方法。
 
