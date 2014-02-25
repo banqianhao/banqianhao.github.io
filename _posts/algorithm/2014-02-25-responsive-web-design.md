@@ -21,37 +21,38 @@ description: "页面的设计与开发应当根据用户行为以及设备环境
 </style>
 
 <pre id='vimCodeElement' style="overflow:auto">
-<span id="L1" class="LineNr">1 </span><span class="htmlTag">&lt;</span><span class="htmlTagName">meta</span><span class="htmlTag"> </span><span class="htmlArg">name</span><span class="htmlTag">=</span><span class="Constant">&quot;viewport&quot;</span><span class="htmlTag"> </span><span class="htmlArg">content</span><span class="htmlTag">=</span><span class="Constant">&quot;width=device-width,initial-scale=1.0&quot;</span><span class="htmlTag"> /&gt;</span>
+<span class="htmlTag">&lt;</span><span class="htmlTagName">meta</span><span class="htmlTag"> </span><span class="htmlArg">name</span><span class="htmlTag">=</span><span class="Constant">&quot;viewport&quot;</span><span class="htmlTag"> </span><span class="htmlArg">content</span><span class="htmlTag">=</span><span class="Constant">&quot;width=device-width,initial-scale=1.0&quot;</span><span class="htmlTag"> /&gt;</span>
 </pre>
 
 
 #媒体查询
 
 可以将下面的代码插入任意CSS文件的最后查看效果
+
 <pre id='vimCodeElement' style="overflow:auto">
-<span id="L1" class="LineNr"> 1 </span><span class="Statement">body</span>: <span class="Identifier">{</span>
-<span id="L2" class="LineNr"> 2 </span>    <span class="Type">background-color</span>: <span class="Constant">grey</span>;
-<span id="L3" class="LineNr"> 3 </span><span class="Identifier">}</span>
-<span id="L4" class="LineNr"> 4 </span><span class="Special">@media</span> <span class="Special">screen</span> and <span class="Special">(</span><span class="Type">max-width</span><span class="Special">: </span><span class="Constant">960px</span><span class="Special">)</span> <span class="Identifier">{</span>
-<span id="L5" class="LineNr"> 5 </span>    <span class="Statement">body</span> <span class="Identifier">{</span>
-<span id="L6" class="LineNr"> 6 </span>        <span class="Type">background-color</span>: <span class="Constant">red</span>;
-<span id="L7" class="LineNr"> 7 </span>    <span class="Identifier">}</span>
-<span id="L8" class="LineNr"> 8 </span><span class="Identifier">}</span>
-<span id="L9" class="LineNr"> 9 </span><span class="Special">@media</span> <span class="Special">screen</span> ans (max-width: 768px) <span class="Identifier">{</span>
-<span id="L10" class="LineNr">10 </span>    body <span class="Identifier">{</span>
-<span id="L11" class="LineNr">11 </span>        <span class="Type">background-color</span>: <span class="Constant">orange</span>;
-<span id="L12" class="LineNr">12 </span>    <span class="Identifier">}</span>
-<span id="L13" class="LineNr">13 </span><span class="Identifier">}</span>
-<span id="L14" class="LineNr">14 </span><span class="Special">@media</span> <span class="Special">screen</span> and <span class="Special">(</span><span class="Type">max-width</span><span class="Special">: </span><span class="Constant">550px</span><span class="Special">)</span> <span class="Identifier">{</span>
-<span id="L15" class="LineNr">15 </span>    <span class="Statement">body</span> <span class="Identifier">{</span>
-<span id="L16" class="LineNr">16 </span>        <span class="Type">background-color</span>: <span class="Constant">yellow</span>;
-<span id="L17" class="LineNr">17 </span>    <span class="Identifier">}</span>
-<span id="L18" class="LineNr">18 </span><span class="Identifier">}</span>
-<span id="L19" class="LineNr">19 </span><span class="Special">@media</span> <span class="Special">screen</span> and <span class="Special">(</span><span class="Type">max-width</span><span class="Special">: </span><span class="Constant">320px</span><span class="Special">)</span> <span class="Identifier">{</span>
-<span id="L20" class="LineNr">20 </span>    <span class="Statement">body</span> <span class="Identifier">{</span>
-<span id="L21" class="LineNr">21 </span>        <span class="Type">background-color</span>: <span class="Constant">green</span>;
-<span id="L22" class="LineNr">22 </span>    <span class="Identifier">}</span>
-<span id="L23" class="LineNr">23 </span><span class="Identifier">}</span>
+<span class="Statement">body</span>: <span class="Identifier">{</span>
+    <span class="Type">background-color</span>: <span class="Constant">grey</span>;
+<span class="Identifier">}</span>
+<span class="Special">@media</span> <span class="Special">screen</span> and <span class="Special">(</span><span class="Type">max-width</span><span class="Special">: </span><span class="Constant">960px</span><span class="Special">)</span> <span class="Identifier">{</span>
+    <span class="Statement">body</span> <span class="Identifier">{</span>
+        <span class="Type">background-color</span>: <span class="Constant">red</span>;
+    <span class="Identifier">}</span>
+<span class="Identifier">}</span>
+<span class="Special">@media</span> <span class="Special">screen</span> ans (max-width: 768px) <span class="Identifier">{</span>
+    body <span class="Identifier">{</span>
+        <span class="Type">background-color</span>: <span class="Constant">orange</span>;
+    <span class="Identifier">}</span>
+<span class="Identifier">}</span>
+<span class="Special">@media</span> <span class="Special">screen</span> and <span class="Special">(</span><span class="Type">max-width</span><span class="Special">: </span><span class="Constant">550px</span><span class="Special">)</span> <span class="Identifier">{</span>
+    <span class="Statement">body</span> <span class="Identifier">{</span>
+        <span class="Type">background-color</span>: <span class="Constant">yellow</span>;
+    <span class="Identifier">}</span>
+<span class="Identifier">}</span>
+<span class="Special">@media</span> <span class="Special">screen</span> and <span class="Special">(</span><span class="Type">max-width</span><span class="Special">: </span><span class="Constant">320px</span><span class="Special">)</span> <span class="Identifier">{</span>
+    <span class="Statement">body</span> <span class="Identifier">{</span>
+        <span class="Type">background-color</span>: <span class="Constant">green</span>;
+    <span class="Identifier">}</span>
+<span class="Identifier">}</span>
 </pre>
 
 
@@ -60,29 +61,28 @@ description: "页面的设计与开发应当根据用户行为以及设备环境
 插入方式
 
 <pre id='vimCodeElement' style="overflow:auto">
-<span id="L1" class="LineNr"> 1 </span><span class="htmlTag">&lt;</span><span class="htmlTagName">link</span><span class="htmlTag"> </span><span class="htmlArg">rel</span><span class="htmlTag">=</span><span class="Constant">&quot;stylesheet&quot;</span><span class="htmlTag"> </span><span class="htmlArg">type</span><span class="htmlTag">=</span><span class="Constant">&quot;text/css&quot;</span><span class="htmlTag"> </span><span class="htmlArg">media</span><span class="htmlTag">=</span><span class="Constant">&quot;screen&quot;</span><span class="htmlTag"> </span><span class="htmlArg">href</span><span class="htmlTag">=</span><span class="Constant">&quot;style.css&quot;</span><span class="htmlTag"> /&gt;</span>
-<span id="L2" class="LineNr"> 2 </span><span class="Comment">&lt;!</span><span class="Comment">--是屏幕才加载style.css文件--</span><span class="Comment">&gt;</span>
-<span id="L3" class="LineNr"> 3 </span>
-<span id="L4" class="LineNr"> 4 </span><span class="htmlTag">&lt;</span><span class="htmlTagName">link</span><span class="htmlTag"> </span><span class="htmlArg">rel</span><span class="htmlTag">=</span><span class="Constant">&quot;stylesheet&quot;</span><span class="htmlTag"> </span><span class="htmlArg">type</span><span class="htmlTag">=</span><span class="Constant">&quot;text/css&quot;</span><span class="htmlTag"> </span><span class="htmlArg">media</span><span class="htmlTag">=</span><span class="Constant">&quot;screen and (orientation: portrait)&quot;</span><span class="htmlTag"> </span><span class="htmlArg">href</span><span class="htmlTag">=</span><span class="Constant">&quot;portrait-style.css&quot;</span><span class="htmlTag"> /&gt;</span>
-<span id="L5" class="LineNr"> 5 </span><span class="Comment">&lt;!</span><span class="Comment">--纵向放置的设备会加载portrait-style.css文件--</span><span class="Comment">&gt;</span>
-<span id="L6" class="LineNr"> 6 </span>
-<span id="L7" class="LineNr"> 7 </span><span class="htmlTag">&lt;</span><span class="htmlTagName">link</span><span class="htmlTag"> </span><span class="htmlArg">rel</span><span class="htmlTag">=</span><span class="Constant">&quot;stylesheet&quot;</span><span class="htmlTag"> </span><span class="htmlArg">type</span><span class="htmlTag">=</span><span class="Constant">&quot;text/css&quot;</span><span class="htmlTag"> </span><span class="htmlArg">media</span><span class="htmlTag">=</span><span class="Constant">&quot;screen and (orientation: portrait) ans (max-width: 800px)&quot;</span><span class="htmlTag"> </span><span class="htmlArg">href</span><span class="htmlTag">=</span><span class="Constant">&quot;800px-portrait-style.css&quot;</span><span class="htmlTag"> /&gt;</span>
-<span id="L8" class="LineNr"> 8 </span><span class="Comment">&lt;!</span><span class="Comment">--进一步限制屏幕尺寸--</span><span class="Comment">&gt;</span>
-<span id="L9" class="LineNr"> 9 </span>
-<span id="L10" class="LineNr">10 </span><span class="htmlTag">&lt;</span><span class="htmlTagName">link</span><span class="htmlTag"> </span><span class="htmlArg">rel</span><span class="htmlTag">=</span><span class="Constant">&quot;stylesheet&quot;</span><span class="htmlTag"> </span><span class="htmlArg">type</span><span class="htmlTag">=</span><span class="Constant">&quot;text/css&quot;</span><span class="htmlTag"> </span><span class="htmlArg">media</span><span class="htmlTag">=</span><span class="Constant">&quot;screen and (orientation: portrait) ans (max-width: 800px), projection&quot;</span><span class="htmlTag"> </span><span class="htmlArg">href</span><span class="htmlTag">=</span><span class="Constant">&quot;800px-portrait-style.css&quot;</span><span class="htmlTag"> /&gt;</span>
-<span id="L11" class="LineNr">11 </span><span class="Comment">&lt;!</span><span class="Comment">--都好分隔几个查询，这里会应用到所有的投影仪--</span><span class="Comment">&gt;</span>
+<span class="htmlTag">&lt;</span><span class="htmlTagName">link</span><span class="htmlTag"> </span><span class="htmlArg">rel</span><span class="htmlTag">=</span><span class="Constant">&quot;stylesheet&quot;</span><span class="htmlTag"> </span><span class="htmlArg">type</span><span class="htmlTag">=</span><span class="Constant">&quot;text/css&quot;</span><span class="htmlTag"> </span><span class="htmlArg">media</span><span class="htmlTag">=</span><span class="Constant">&quot;screen&quot;</span><span class="htmlTag"> </span><span class="htmlArg">href</span><span class="htmlTag">=</span><span class="Constant">&quot;style.css&quot;</span><span class="htmlTag"> /&gt;</span>
+<span class="Comment">&lt;!</span><span class="Comment">--是屏幕才加载style.css文件--</span><span class="Comment">&gt;</span>
+
+<span class="htmlTag">&lt;</span><span class="htmlTagName">link</span><span class="htmlTag"> </span><span class="htmlArg">rel</span><span class="htmlTag">=</span><span class="Constant">&quot;stylesheet&quot;</span><span class="htmlTag"> </span><span class="htmlArg">type</span><span class="htmlTag">=</span><span class="Constant">&quot;text/css&quot;</span><span class="htmlTag"> </span><span class="htmlArg">media</span><span class="htmlTag">=</span><span class="Constant">&quot;screen and (orientation: portrait)&quot;</span><span class="htmlTag"> </span><span class="htmlArg">href</span><span class="htmlTag">=</span><span class="Constant">&quot;portrait-style.css&quot;</span><span class="htmlTag"> /&gt;</span>
+<span class="Comment">&lt;!</span><span class="Comment">--纵向放置的设备会加载portrait-style.css文件--</span><span class="Comment">&gt;</span>
+
+<span class="htmlTag">&lt;</span><span class="htmlTagName">link</span><span class="htmlTag"> </span><span class="htmlArg">rel</span><span class="htmlTag">=</span><span class="Constant">&quot;stylesheet&quot;</span><span class="htmlTag"> </span><span class="htmlArg">type</span><span class="htmlTag">=</span><span class="Constant">&quot;text/css&quot;</span><span class="htmlTag"> </span><span class="htmlArg">media</span><span class="htmlTag">=</span><span class="Constant">&quot;screen and (orientation: portrait) ans (max-width: 800px)&quot;</span><span class="htmlTag"> </span><span class="htmlArg">href</span><span class="htmlTag">=</span><span class="Constant">&quot;800px-portrait-style.css&quot;</span><span class="htmlTag"> /&gt;</span>
+<span class="Comment">&lt;!</span><span class="Comment">--进一步限制屏幕尺寸--</span><span class="Comment">&gt;</span>
+
+<span class="htmlTag">&lt;</span><span class="htmlTagName">link</span><span class="htmlTag"> </span><span class="htmlArg">rel</span><span class="htmlTag">=</span><span class="Constant">&quot;stylesheet&quot;</span><span class="htmlTag"> </span><span class="htmlArg">type</span><span class="htmlTag">=</span><span class="Constant">&quot;text/css&quot;</span><span class="htmlTag"> </span><span class="htmlArg">media</span><span class="htmlTag">=</span><span class="Constant">&quot;screen and (orientation: portrait) ans (max-width: 800px), projection&quot;</span><span class="htmlTag"> </span><span class="htmlArg">href</span><span class="htmlTag">=</span><span class="Constant">&quot;800px-portrait-style.css&quot;</span><span class="htmlTag"> /&gt;</span>
+<span class="Comment">&lt;!</span><span class="Comment">--都好分隔几个查询，这里会应用到所有的投影仪--</span><span class="Comment">&gt;</span>
 </pre>
 
 
 还可以使用import，下面的例子将为视口最大宽度为360像素的显示屏设备加载phone.css
+
 <pre id='vimCodeElement' style="overflow:auto">
-<span id="L1" class="LineNr">1 </span><span class="PreProc">@import </span><span class="Identifier">url(</span><span class="Constant">&quot;phone.css&quot;</span><span class="Identifier">)</span><span class="PreProc"> </span><span class="Special">screen</span><span class="PreProc"> and </span><span class="Special">(</span><span class="Type">max-width</span><span class="Special">: </span><span class="Constant">360px</span><span class="Special">)</span><span class="PreProc">;</span>
+<span class="PreProc">@import </span><span class="Identifier">url(</span><span class="Constant">&quot;phone.css&quot;</span><span class="Identifier">)</span><span class="PreProc"> </span><span class="Special">screen</span><span class="PreProc"> and </span><span class="Special">(</span><span class="Type">max-width</span><span class="Special">: </span><span class="Constant">360px</span><span class="Special">)</span><span class="PreProc">;</span>
 </pre>
 
 
 但是这样会增加HTTP请求，影响加载速度。
-
-记住使用全能的max-width属性，除了max-width还有min-width
 
 #HTML全新语义
 
