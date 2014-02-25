@@ -12,10 +12,11 @@ title: "[ quant67 ]"
         <div class="IndexP">
             <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
             <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 220 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 220 }}{% endif %}</p>
-            <div class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></div>
-            <a class="ContinueRead" href="{{ site.url }}{{ post.url }}"><small>阅读全文</small></a>
+            <div class="date">
+                <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+            </div>
+            <a class="ContinueRead" href="{{ site.url }}{{ post.url }}">阅读全文</a>
         </div>
-        <hr />
         {% endfor %}
     </ul>
 </div>
