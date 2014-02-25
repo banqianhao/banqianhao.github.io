@@ -18,6 +18,8 @@ body {
     background-color: #FFF;
     font: 15.04px Arial, sans-serif;
     Font-family: arial, sans-serif;
+    text-align: center;
+    word-wrap: break-word;
 }
 /*
 ::selection {
