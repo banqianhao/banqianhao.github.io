@@ -3,7 +3,7 @@ layout : post
 category : 技术
 title : 响应式设计备忘录
 tags: [design, web, css, HTML5]
-description: "页面的设计与开发应当根据用户行为以及设备环境(系统平台、屏幕尺寸、屏幕定向等)进行相应的响应和调整。具体的实践方式由多方面组成，包括弹性网格和布局、图片、CSS media query的使用等。无论用户正在使用笔记本还是iPad，我们的页面都应该能够自动切换分辨率、图片尺寸及相关脚本功能等，以适应不同设备；换句话说，页面应该有能力去自动响应用户的设备环境。响应式网页设计就是一个网站能够兼容多个终端——而不是为每个终端做一个特定的版本。这样，我们就可以不必为不断到来的新设备做专门的版本设计和开发了。"
+description: "页面的设计与开发应当根据用户行为以及设备环境(系统平台、屏幕尺寸、屏幕定向等)进行相应的响应和调整。具体的实践方式由多方面组成，包括弹性网格和布局、图片、CSS media query的使用等。无论用户正在使用笔记本还是iPad，我们的页面都应该能够自动切换分辨率、图片尺寸及相关脚本功能等，以适应不同设备。"
 ---
 
 #必要准备
@@ -11,7 +11,7 @@ description: "页面的设计与开发应当根据用户行为以及设备环境
 为了不让浏览器自动缩放，必须加入下面一行
 
 <style type="text/css">
-pre { font-family: monospace; color: #839496; background-color: #002b36; }
+
 .Constant { color: #2aa198; }
 .Identifier { color: #268bd2; }
 .LineNr { }
@@ -20,7 +20,7 @@ pre { font-family: monospace; color: #839496; background-color: #002b36; }
 .Special { color: #dc322f; }
 </style>
 
-<pre id='vimCodeElement'>
+<pre id='vimCodeElement' style="overflow:auto">
 <span id="L1" class="LineNr">1 </span><span class="htmlTag">&lt;</span><span class="htmlTagName">meta</span><span class="htmlTag"> </span><span class="htmlArg">name</span><span class="htmlTag">=</span><span class="Constant">&quot;viewport&quot;</span><span class="htmlTag"> </span><span class="htmlArg">content</span><span class="htmlTag">=</span><span class="Constant">&quot;width=device-width,initial-scale=1.0&quot;</span><span class="htmlTag"> /&gt;</span>
 </pre>
 
@@ -28,8 +28,7 @@ pre { font-family: monospace; color: #839496; background-color: #002b36; }
 #媒体查询
 
 可以将下面的代码插入任意CSS文件的最后查看效果
-
-<pre id='vimCodeElement'>
+<pre id='vimCodeElement' style="overflow:auto">
 <span id="L1" class="LineNr"> 1 </span><span class="Statement">body</span>: <span class="Identifier">{</span>
 <span id="L2" class="LineNr"> 2 </span>    <span class="Type">background-color</span>: <span class="Constant">grey</span>;
 <span id="L3" class="LineNr"> 3 </span><span class="Identifier">}</span>
@@ -60,7 +59,7 @@ pre { font-family: monospace; color: #839496; background-color: #002b36; }
 
 插入方式
 
-<pre id='vimCodeElement'>
+<pre id='vimCodeElement' style="overflow:auto">
 <span id="L1" class="LineNr"> 1 </span><span class="htmlTag">&lt;</span><span class="htmlTagName">link</span><span class="htmlTag"> </span><span class="htmlArg">rel</span><span class="htmlTag">=</span><span class="Constant">&quot;stylesheet&quot;</span><span class="htmlTag"> </span><span class="htmlArg">type</span><span class="htmlTag">=</span><span class="Constant">&quot;text/css&quot;</span><span class="htmlTag"> </span><span class="htmlArg">media</span><span class="htmlTag">=</span><span class="Constant">&quot;screen&quot;</span><span class="htmlTag"> </span><span class="htmlArg">href</span><span class="htmlTag">=</span><span class="Constant">&quot;style.css&quot;</span><span class="htmlTag"> /&gt;</span>
 <span id="L2" class="LineNr"> 2 </span><span class="Comment">&lt;!</span><span class="Comment">--是屏幕才加载style.css文件--</span><span class="Comment">&gt;</span>
 <span id="L3" class="LineNr"> 3 </span>
@@ -76,8 +75,7 @@ pre { font-family: monospace; color: #839496; background-color: #002b36; }
 
 
 还可以使用import，下面的例子将为视口最大宽度为360像素的显示屏设备加载phone.css
-
-<pre id='vimCodeElement'>
+<pre id='vimCodeElement' style="overflow:auto">
 <span id="L1" class="LineNr">1 </span><span class="PreProc">@import </span><span class="Identifier">url(</span><span class="Constant">&quot;phone.css&quot;</span><span class="Identifier">)</span><span class="PreProc"> </span><span class="Special">screen</span><span class="PreProc"> and </span><span class="Special">(</span><span class="Type">max-width</span><span class="Special">: </span><span class="Constant">360px</span><span class="Special">)</span><span class="PreProc">;</span>
 </pre>
 
@@ -88,7 +86,7 @@ pre { font-family: monospace; color: #839496; background-color: #002b36; }
 
 #HTML全新语义
 
-<pre id='vimCodeElement'>
+<pre id='vimCodeElement' style="overflow:auto">
 &lt;<span class="Statement">section</span><span class="Special">&gt;</span>
 文档中的区域或节
 
@@ -118,12 +116,11 @@ pre { font-family: monospace; color: #839496; background-color: #002b36; }
 
 #正文部分
 
-<pre id='vimCodeElement'>
+<pre id='vimCodeElement' style="overflow:auto">
 &lt;<span class="Statement">b</span><span class="Special">&gt;</span>加粗
 
 &lt;<span class="Statement">em</span><span class="Special">&gt;</span>强调内容重点
 
 &lt;<span class="Statement">i</span><span class="Special">&gt;</span>斜体
-
 </pre>
 
