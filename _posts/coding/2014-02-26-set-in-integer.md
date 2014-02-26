@@ -80,7 +80,7 @@ pre { font-family: monospace; color: #839496; background-color: #002b36; }
 枚举{0,1,...,n-1}的所有子集
 
 <pre id='vimCodeElement' style=" font-family: monospace; color: #839496; background-color: #002b36; ">
-<span class="Type">int</span> comb = (<span class="Constant">1</span> &lt;&lt; k)-<span class="Constant">1</span>;
+<span class="Type">int</span> comb = (<span class="Constant">1</span> &lt;&lt; k) - <span class="Constant">1</span>;
 <span class="Statement">while</span> (comb &lt; <span class="Constant">1</span> &lt;&lt; n) {
     <span class="Comment">//处理组合</span>
     <span class="Type">int</span> x = comb &amp; -comb, y = comb + x;
