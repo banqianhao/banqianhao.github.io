@@ -77,7 +77,7 @@ pre { font-family: monospace; color: #839496; background-color: #002b36; }
 } <span class="Statement">while</span>(sub != sup); <span class="Comment">//处理完0之后，会有-1&amp;sup=sup</span>
 </pre>
 
-枚举{0,1,...,n-1}的所有子集
+枚举{0,1,...,n-1}的所有容量为k的子集
 
 <pre id='vimCodeElement' style=" font-family: monospace; color: #839496; background-color: #002b36; ">
 <span class="Type">int</span> comb = (<span class="Constant">1</span> &lt;&lt; k) - <span class="Constant">1</span>;
