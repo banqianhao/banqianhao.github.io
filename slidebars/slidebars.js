@@ -304,13 +304,13 @@
         $('.close').on('click', function() {
             mySlidebars.close();
         });
-        $('html').mousemove(function(e) {
-            var xx = e.originalEvent.x || e.originalEvent.layerX || 0;
-            var yy = e.originalEvent.y || e.originalEvent.layerY || 0;
-            if(xx < 40) {
-                mySlidebars.open('left');
-            }
-        });
+//        $('html').mousemove(function(e) {
+//            var xx = e.originalEvent.x || e.originalEvent.layerX || 0;
+//            var yy = e.originalEvent.y || e.originalEvent.layerY || 0;
+//            if(xx < 40) {
+//                mySlidebars.open('left');
+//            }
+//        });
 //        $('sb-left').mouseleave(
 //            mySlidebars.close();
 //        );
