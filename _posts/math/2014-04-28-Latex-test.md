@@ -2,7 +2,7 @@
 layout: post
 title: "Latex Test"
 description: "tex test"
-category: articles
+category: math
 tags: [Latex, test]
 ---
 
