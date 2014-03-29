@@ -1,5 +1,5 @@
 name: quant67
-markdown: redcarpet
+markdown: rdiscount
 pygments: true
 
 permalink:   /:categories/:title
