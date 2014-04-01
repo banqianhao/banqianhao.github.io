@@ -1,7 +1,6 @@
 ---
 layout: post
 title: PLOOR/CEILING APPLICATIONS
-description: "I just install Tex support so enjoy it."
 category: math
 tags: [intro, math]
 ---
