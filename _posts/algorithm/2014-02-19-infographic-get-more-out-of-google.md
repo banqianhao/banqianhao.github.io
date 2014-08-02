@@ -8,7 +8,7 @@ tags: [tools, Google]
 
 图转自[开卷有益](http://kaijuan.org/%E6%96%87%E4%BB%B6:%E4%BF%A1%E6%81%AF%E5%9B%BE-%E4%BB%8E%E8%B0%B7%E6%AD%8C%E6%90%9C%E8%8E%B7%E6%9B%B4%E5%A4%9A.png),也可以查看[英文原图](http://www.hackcollege.com/blog/2011/11/23/infographic-get-more-out-of-google.html)
 
-![Google picture](http://kaijuan.org/images/7/7a/%E4%BF%A1%E6%81%AF%E5%9B%BE-%E4%BB%8E%E8%B0%B7%E6%AD%8C%E6%90%9C%E8%8E%B7%E6%9B%B4%E5%A4%9A.png)
+![Google picture](/images/google/google.gif)
 
 ---
 ##更多说明
