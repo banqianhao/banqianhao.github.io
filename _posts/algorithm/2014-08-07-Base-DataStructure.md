@@ -10,4 +10,4 @@ description: "给HEU的ACM暑假集训写的东西，包括了数组、链表、
 
 文件为PDF格式，可以<a href="/DL/baseDataStructure.pdf">在这里查看</a>。
 
-如果发现有纰漏，可以 <a href="mailto:liaotonglang@gmail.com?subject=from_pages"><i class="fa fa-envelope-o ic"></i>点击这里告诉提醒我</a>。
+如果发现有纰漏，可以 <a href="mailto:liaotonglang@gmail.com?subject=from_pages"><i class="fa fa-envelope-o ic" style=”width=1.5em”></i>点击这里告诉提醒我</a>。
