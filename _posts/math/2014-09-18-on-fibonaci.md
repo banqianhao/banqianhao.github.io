@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 求解斐波那契数列
-category: math
+category: 探险指南
 tags: [fibonaci, math, recursion]
 ---
 
@@ -45,7 +45,7 @@ f\_n=c\_1\left(\frac{1+\sqrt{5}}{2}\right)^n+c\_2\left(\frac{1-\sqrt{5}}{2}\righ
 $$
 将初始值$f\_0=0,f\_1=1$代入求解得
 $$
-f_n=\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^n-\frac{1}{\sqrt{5}}\left(\frac{1-\sqrt{5}}{2}\right)^2\quad(n\ge 0)
+f_n=\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^n-\frac{1}{\sqrt{5}}\left(\frac{1-\sqrt{5}}{2}\right)^n\quad(n\ge 0)
 $$
 
 <div style="background-color:#D1D7D7; margin-left:4em; margin-right:2em; padding:2em; border:4px #000000 solid">
