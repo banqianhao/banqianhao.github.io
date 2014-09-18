@@ -1,6 +1,6 @@
 ---
 layout : post
-category : coding
+category : algorithm
 title : 集合的整数表示
 tags: [design, web, css, HTML5]
 description: "在程序中表示集合的方法有很多种，当元素比较少时，用二进制码来表示比较方便。集合{0,1,...n-1}的子集S可以用如下方式编码成整数。"

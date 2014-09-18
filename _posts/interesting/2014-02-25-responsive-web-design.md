@@ -1,6 +1,6 @@
 ---
 layout : post
-category : 技术
+category : interesting
 title : 响应式设计备忘录
 tags: [design, web, css, HTML5]
 description: "页面的设计与开发应当根据用户行为以及设备环境(系统平台、屏幕尺寸、屏幕定向等)进行相应的响应和调整。具体的实践方式由多方面组成，包括弹性网格和布局、图片、CSS media query的使用等。无论用户正在使用笔记本还是iPad，我们的页面都应该能够自动切换分辨率、图片尺寸及相关脚本功能等，以适应不同设备。"

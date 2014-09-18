@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "那些我认为逼格很高或者很有趣的网页"
-category: design
+category: interesting
 description: "学HTML的时候看了一些有意思的网页，选取一些放在这里，排名不分先后。"
 tags: [design, web]
 ---

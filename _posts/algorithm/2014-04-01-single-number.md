@@ -1,7 +1,7 @@
 ---
 layout: post
 title: single number
-category: math
+category: algorithm
 tags: [intro, math]
 ---
 

@@ -1,3 +1,7 @@
-_site
+_site/*
 *.exe
 *.o
+*~
+*.class
+
+

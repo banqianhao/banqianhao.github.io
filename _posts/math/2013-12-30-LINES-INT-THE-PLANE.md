@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "递归:线切平面"
-category: algorithm
+category: math
 tags: [algorithm, math]
 ---
 

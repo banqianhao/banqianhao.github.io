@@ -1,10 +1,8 @@
 ---
 layout : post
-category : 技术
+category : algorithm
 title : THE FACTORIAL PROBLEM
 description: 一个很有意思的题目。
-image: 
-        feature: soft-trees.jpg
 ---
 
 在[codechef](http://www.codechef.com/problems/FCTRL)上发现一个挺有意思的[题目](http://www.codechef.com/problems/FCTRL)。大意是这样的：
