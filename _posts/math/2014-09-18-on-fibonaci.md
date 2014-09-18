@@ -41,7 +41,7 @@ $$
 
 两者都是递推关系的解。由于递推关系时线性的和齐次的，通过直接计算得到
 $$
-f\_n=c\_1\left(\frac{1+\sqrt{5}}{2}\right)^n+c\_2\left(\frac{1-\sqrt{5}}{2}\right)^2
+f\_n=c\_1\left(\frac{1+\sqrt{5}}{2}\right)^n+c\_2\left(\frac{1-\sqrt{5}}{2}\right)^n
 $$
 将初始值$f\_0=0,f\_1=1$代入求解得
 $$
