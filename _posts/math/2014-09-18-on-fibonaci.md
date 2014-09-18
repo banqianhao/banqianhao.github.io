@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 求解斐波那契数列
-category: 探险指南
+category: math
 tags: [fibonaci, math, recursion]
 ---
 
