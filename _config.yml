@@ -1,6 +1,6 @@
 name: quant67
 markdown: redcarpet
-pygments: true
+higlighter: pygments
 
 permalink:   /:categories/:title
 
