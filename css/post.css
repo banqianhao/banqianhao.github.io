@@ -39,24 +39,11 @@
   user-select: none;
 }
 
-.post pre a:first-of-type::before {
-  padding-top: 10px;
-}
-
-.post pre a:last-of-type::before {
-  padding-bottom: 10px;
-}
-
-.post pre a:only-of-type::before {
-  padding: 10px;
-}
-
+//...
 .post ul, .post ol {
     margin-left: 1.35em;
 }
 
-
-//...
 .date {
     width: 100%;
     overflow: hidden;
