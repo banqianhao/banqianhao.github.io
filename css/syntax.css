@@ -32,7 +32,7 @@
 .codehilite .sr { font-style: italic } /* Literal.String.Regex */
 .codehilite .s1 { font-style: italic } /* Literal.String.Single */
 .codehilite .ss { font-style: italic } /* Literal.String.Symbol */
-.codehilite .lineno {
+.lineno {
     padding-right:1em;
     width: 25px;
     text-align:right;
@@ -50,3 +50,4 @@
     -ms-user-select: none;
     user-select: none;
 }
+
