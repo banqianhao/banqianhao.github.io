@@ -17,26 +17,6 @@
     word-break: inherit;
     word-wrap: inherit;
 }
-.post pre a::before {
-  content: counter(line-numbering);
-  counter-increment: line-numbering;
-  padding-right: 1em; /* space after numbers */
-  width: 25px;
-  text-align: right;
-  opacity: 0.7;
-  display: inline-block;
-  color: #0A0A0A;
-  background: #0E0E0E;
-  margin-right: 16px;
-  padding: 2px 10px;
-  font-size: 13px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 //...
 .post ul, .post ol {
