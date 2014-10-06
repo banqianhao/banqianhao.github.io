@@ -32,3 +32,21 @@
 .codehilite .sr { font-style: italic } /* Literal.String.Regex */
 .codehilite .s1 { font-style: italic } /* Literal.String.Single */
 .codehilite .ss { font-style: italic } /* Literal.String.Symbol */
+.codehilite .lineno {
+    padding-right:1em;
+    width: 25px;
+    text-align:right;
+    opacity: 0.7;
+    display: inline-block;
+    color #aaa;
+    Background: #eee;
+    margin-right: 16px;
+    padding: 2px 10px;
+    font-size: 13px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
