@@ -49,5 +49,6 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    border-right: solid 1px #D9D9D9;
 }
 
