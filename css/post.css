@@ -11,8 +11,8 @@
     padding: 0.4em;
     line-height: 23px;
     margin-bottom: 30px;
-    white-space: pre;
-    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-x: auto;
     word-break: inherit;
     word-wrap: inherit;
 }
