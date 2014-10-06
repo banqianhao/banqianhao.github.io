@@ -1,38 +1,62 @@
+/*
+ * code
+ */
 .post pre {
     overflow: auto;
     border: 1px solid #AABDB4;
     background-color: #FFFFFF;
     padding: 0 .4em;
+    counter-reset: line-numbering;
+    border: solid 1px #D9D9D9;
+    border-radius: 0;
+    background: #FFFFFF;
+    padding: 0;
+    line-height: 23px;
+    margin-bottom: 30px;
+    white-space: pre;
+    overflow-x: auto;
+    word-break: inherit;
+    word-wrap: inherit;
 }
-pre {
-    overflow: auto;
+.post pre a::before {
+  content: counter(line-numbering);
+  counter-increment: line-numbering;
+  padding-right: 1em; /* space after numbers */
+  width: 25px;
+  text-align: right;
+  opacity: 0.7;
+  display: inline-block;
+  color: #0A0A0A;
+  background: #0E0E0E;
+  margin-right: 16px;
+  padding: 2px 10px;
+  font-size: 13px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.post pre a:first-of-type::before {
+  padding-top: 10px;
+}
+
+.post pre a:last-of-type::before {
+  padding-bottom: 10px;
+}
+
+.post pre a:only-of-type::before {
+  padding: 10px;
 }
 
 .post ul, .post ol {
     margin-left: 1.35em;
 }
 
-.post code {
-    border: 1px solid #FFFFFF;
-    background-color: #FFFFFF;
-    padding: 0 .2em;
-}
 
-.post pre code {
-    border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-    border: 1px solid #000;
-    background-color: #B3Ad9B;
-    color: #FFF;
-}
-
-.post pre.terminal code {
-    background-color: #FFFFFF;
-}
-
+//...
 .date {
     width: 100%;
     overflow: hidden;
