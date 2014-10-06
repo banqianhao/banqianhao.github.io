@@ -10,7 +10,7 @@
     padding: 0.4em;
     line-height: 23px;
     margin-bottom: 30px;
-    overflow-x: auto;
+    overflow-x: scroll-position;
 }
 
 //...
