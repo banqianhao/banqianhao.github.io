@@ -8,7 +8,7 @@ image:
 ---
 
 ### 刚装git
-{% highlight python %}
+{% highlight python linenos %}
 git config --global user.email "liaotonglang@gmail.com"
 git config --global user.name "quant67"
 git config --global color.ui always
@@ -21,7 +21,7 @@ git config -l  # 列举所有配置
 {% endhighlight %}
 
 ###日常使用
-{% highlight python %}
+{% highlight python linenos %}
 git help <command>  # 显示command的help
 git show            # 显示某次提交的内容
 git show $id
