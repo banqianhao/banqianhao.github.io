@@ -2,7 +2,6 @@
  * code
  */
 .post pre {
-    overflow: auto;
     border: 1px solid #AABDB4;
     background-color: #FFFFFF;
     counter-reset: line-numbering;
@@ -13,7 +12,7 @@
     line-height: 23px;
     margin-bottom: 30px;
     white-space: pre;
-    overflow-x: auto;
+    overflow-x: scroll;
     word-break: inherit;
     word-wrap: inherit;
 }
