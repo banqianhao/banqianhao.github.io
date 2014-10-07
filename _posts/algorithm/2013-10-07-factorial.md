@@ -47,6 +47,7 @@ Sample Output:
 <style type="text/css">
 <!--
 * { font-size: 1em; }
+pre {padding-left:0.4em;}
 .Statement { color: #719e07; }
 .Comment { color: #586e75; font-style: italic; }
 .Constant { color: #2aa198; }

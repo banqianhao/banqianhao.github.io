@@ -20,6 +20,7 @@ tags: [intro, math]
 .Statement { color: #f92672; font-weight: bold; }
 .Type { color: #66d9ef; }
 .Repeat { color: #f92672; font-weight: bold; }
+pre {padding-left:0.4em;}
 </style>
 
 <pre id='vimCodeElement' style=" font-family: monospace; color: #f8f8f2; background-color: #1b1d1e; ">

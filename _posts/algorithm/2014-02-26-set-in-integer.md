@@ -54,6 +54,7 @@ table, td, th { border:1px solid #333; }
 
 <style type="text/css">
 pre { font-family: monospace; color: #839496; background-color: #002b36; }
+pre {padding-left: 0.4em;}
 * { font-size: 1em; }
 .Constant { color: #2aa198; }
 .Statement { color: #719e07; }

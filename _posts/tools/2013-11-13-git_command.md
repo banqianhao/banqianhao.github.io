@@ -51,7 +51,7 @@ git revert HEAD     # 恢复最后一次提交的状态
 
 ###查看diff
 
-{% highlight python %}
+{% highlight python linenos %}
 git diff <file>     # 比较当前文件和暂存区文件差异
 git diff
 git diff <$id1>..<$id2>   # 比较两次提交之间的差异
@@ -63,7 +63,7 @@ git diff --stat     # 仅仅比较统计信息
 
 ###commit记录
 
-{% highlight python %}
+{% highlight python linenos %}
 git log
 git log <file>      # 查看该文件每次提交记录
 git log -p <file>   # 查看每次详细修改内容的diff
@@ -72,7 +72,7 @@ git log -p -2       # 查看最近两次详细修改内容的di
 
 ###分支
 
-{% highlight python %}
+{% highlight python linenos %}
 git br -r           # 查看远程分支
 git br <new_branch> # 创建新的分支
 git br -v           # 查看各个分支最后提交信息
@@ -98,14 +98,14 @@ git co <branch> && git rebase master && git co master && git merge <branch>
 
 ###补丁
 
-{% highlight python %}
+{% highlight python linenos %}
 git diff > ../sync.patch         # 生成补丁
 git apply ../sync.patch          # 打补丁
 {% endhighlight %}
 
 ###暂存
 
-{% highlight python %}
+{% highlight python linenos %}
 git stash                        # 暂存
 git stash list                   # 列所有stash
 git stash apply                  # 恢复暂存的内容
@@ -115,7 +115,7 @@ git stash drop                   # 删除暂存区
 ###远程
 
 
-{% highlight python %}
+{% highlight python linenos %}
 git pull                         # 抓取远程仓库所有分支更新并合并到本地
 git pull --no-ff                 # 抓取远程仓库所有分支更新并合并到本地，不要快进合并
 git fetch origin                 # 抓取远程仓库更新

@@ -11,7 +11,7 @@ description: "页面的设计与开发应当根据用户行为以及设备环境
 为了不让浏览器自动缩放，必须加入下面一行
 
 <style type="text/css">
-
+pre {padding-left:0.4em;}
 .Constant { color: #2aa198; }
 .Identifier { color: #268bd2; }
 .LineNr { }
