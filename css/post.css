@@ -9,7 +9,7 @@
     padding-right: 0.4em;
     line-height: 23px;
     margin-bottom: 30px;
-    overflow-x: scroll-position;
+    overflow-x: visible;
 }
 
 //...
