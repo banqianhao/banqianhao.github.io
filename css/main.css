@@ -37,7 +37,7 @@ a {
     color: #FC9D9D;
     text-decoration: none;
 } a:visited {
-    color: #99CCB4; 
+    color: #99CCB4;
 } a:hover {
     color: #AABDB4;
     transition: all 0.25s linear;
@@ -53,7 +53,7 @@ a {
     font-size: 115%;
     text-align: justify;
     width: 100%;
-    max-width: 48em;
+    max-width: 54em;
     margin: 3em auto 2em;
     line-height: 1.5em;
 }
