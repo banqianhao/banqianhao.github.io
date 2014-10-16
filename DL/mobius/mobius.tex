@@ -1,0 +1,179 @@
+\documentclass[a4paper]{article}
+
+\input{imports.tex}
+\input{bfhead.tex}
+
+\title{关于莫比乌斯反演的详细说明}
+\author{[ quant67 ]}
+\date{2014\ 年\ 10\ 月\ 16\ 日}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+本文且当作组合数学容斥原理部分的课堂笔记。
+\end{abstract}
+
+\section{用途}
+容斥原理是莫比乌斯反演在有限偏序集上的一个实例。考虑$X_n=\left\{1,2,\cdots, n \right\}$,以及由包含关系所定义的所有子集的偏序集$F:\left( P\left( { X }_{ n } \right) ,\subseteq  \right)$。令
+$$
+F:P(X_n) \rightarrow \Re
+$$
+是一个定义在$P(X_n),\subseteq$ 上的实值函数。我们用$F$定义一个新的函数
+$$
+G:P(X_n) \rightarrow \Re
+$$
+其中
+\begin{equation}
+G(K)=\sum _{ L\subseteq K }^{  }{ F(L) } \quad (K\subseteq X_{ n })
+\end{equation}
+莫比乌斯反演可将式（1）反解并从G还原F；特别地，我们有
+\begin{equation}
+  F(K)=\sum_{L\subseteq K}(-1)^{|K|-|L|}G(L) \quad (K\subseteq X_{ n })
+\end{equation}
+
+令$A_1,A_2,\cdots,A_n$是有限偏序集S的子集，对于$K\subseteq X_n$，定义$F(K)$是S的只属于$i\notin K$的那些集合$A_i$的元素的个数。此时
+$$
+G(K)=\sum_{L\subseteq K}F(L)=\mid\bigcap_{i\notin E}A_i\mid
+$$
+由式（2），有
+\begin{equation}
+  F(K)=\sum_{L\subseteq K}(-1)^{|K|-|L|}G(L)
+\end{equation}
+取$K=X_n$,得
+\begin{equation}
+  F(K)=\sum_{L\subseteq K}(-1)^{n-|L|}G(L)
+\end{equation}
+所以
+\begin{equation}
+  |\overline{A_1}\cap\overline{A_2}\cap \cdots \cap \overline{A_n}|=\sum_{L\subseteq X_n}(-1)^{n-|L|}|\cap_{i\notin L}A_i|
+\end{equation}
+这正是容斥原理公式。
+
+\section{卷积}
+令$(X,\leq)$为任意有限偏序集，$F(X)$为所有满足只要$ x\not\leq y $就有$ f(x,y)=0 $的所有实值函数
+$$
+f:X\times X \rightarrow \Re
+$$
+的集合。我们通过
+$$h(x,y)=
+\left\{
+  \begin{array}{ll}
+    \sum_{\{z:x\leq x \leq y\}}f(x,z)g(z,y),& if\ x\leq y \\
+    0, &else
+  \end{array}
+\right.
+$$
+
+定义$F(X)$中两个函数$f$和$g$的卷积$h=f*g$。显然，卷积满足结合律。
+
+\section{$\delta$函数和$\zeta$函数}
+$$
+\delta (x,y)=\left\{
+               \begin{array}{ll}
+                 1, & if\ x = y \\
+                 0, & else
+               \end{array}
+             \right.
+$$
+注意，对所有的函数$f\in F(x),\ \delta * f = f* \delta =f$，所以$\delta$为单位元。
+
+$$
+\zeta (x,y)=\left\{
+        \begin{array}{ll}
+          1, & if\ x \leq y \\
+          0, & else
+        \end{array}
+      \right.
+$$
+$\zeta$函数式偏序集$(X,\leq)$的一种表示。
+
+\section{逆元}
+令$f$为$F(X)$中的一个函数，满足对$X$中的所有$y$有$f(y,y)\not=0$。我们可以首先令
+\begin{equation}
+  g(y,y)=\frac{1}{f(y,y)}\ (y\in X)
+\end{equation}
+然后令
+\begin{equation}
+  g(x,y)=-\sum_{|z:x\leq z < y|}g(x,y)\frac{f(z,y)}{f(y,y)}\ (x < y)
+\end{equation}
+来归纳定义$F(X)$中的函数$g$。
+
+从式（7）得
+\begin{equation}
+  \sum_{\{z:x\leq z \leq y\}}g(x,z)f(z,y)=\delta (x,y)\quad (x\leq y)
+\end{equation}
+式（8）告诉我们
+$$
+g*f=\delta
+$$
+从而$g$是$f$的关于卷积的逆元。
+
+\section{$\mu$ 函数(莫比乌斯函数)}
+由于对所有的$y\in X$，$\zeta (y,y)=1$，因此$\zeta$有一个逆，定义$\mu$是它的逆。因此，有
+$$
+\mu * \zeta = \delta
+$$
+等价地
+\begin{equation}
+  \sum_{\{z:x\leq z\leq y\}}\mu (x,z)=\delta (x,y)\quad (x\leq y)
+\end{equation}
+这意味着
+\begin{equation}
+  \mu (x,x)=1,\ for\ every\ x
+\end{equation}
+以及
+\begin{equation}
+  \mu (x,y)=-\sum_{\{z:x\leq z <y\}}\mu (x,z)\quad (x<y)
+\end{equation}
+
+\section{性质和定理}
+\begin{theorem}
+令$(X,\leq)$为最小元是0的偏序集，令$\mu$是它的莫比乌斯函数，并令$F:X\rightarrow \Re$由
+$$
+G(x)=\sum_{\{z:z\leq x\}}F(z)\quad (x\in X)
+$$
+定义。则
+$$
+F(x)=\sum_{\{y:y\leq x\}}G(y)\mu (y,x)\quad (x\in X)
+$$
+\end{theorem}
+
+{\bf 证明:} 令$\zeta$为$(X, \leq)$的$\zeta$函数。利用前面讨论的性质，对$X$中的任意元素$x$计算如下：
+$$
+  \begin{array}{ll}
+    \sum_{\{y:y\leq x\}}G(y)\mu (y,x)
+     & = \sum_{\{y:y\leq x\}}\sum_{\{z:z\leq y\}}F(z)\mu (y,x)\\
+     & = \sum_{\{y:y\leq x\}}\mu (y,x) \sum_{\{z:z\in X\}}\zeta (z,y)F(z)\\
+     & = \sum_{\{z:z\in X\}} \delta (z,x)F(z)\\
+     & = F(x)
+  \end{array}
+$$
+
+\begin{theorem}
+令$(X,\leq _1)$和$(Y,\leq _2)$为两个有限偏序集，他们的莫比乌斯函数分别为$\mu _1$和$\mu _2$。令$\mu$为$(X,\leq _1)$和$(Y,\leq _2)$的直积的莫比乌斯函数。则
+\begin{equation}%
+ \mu ((x,y),(x',y'))=\mu (x,x')\mu (y,y')\quad ((x,y),(x',y')\in X\times Y)
+\end{equation}
+\end{theorem}
+使用归纳法可容易证明此定理，证明略。
+
+\begin{theorem}
+令F为定义在正整数集上的实值函数。由
+$$
+G(n)=\sum_{k:k|n}F(k)
+$$
+定义在正整数集合上的实值函数$G$。则对于每一个正整数$n$，有
+$$
+F(n)=\sum_{k:k|n}\mu (n/k) G(k)
+$$
+其中$\mu (1,n/k)$为$\mu (n/k)$。
+\end{theorem}
+此定理可由定理6.1简单地证明。
+
+\section{代码}
+\lstinputlisting{"mobius.cpp"}
+
+\bibliographystyle{ieeetr}
+\bibliography{bibfile}
+\nocite{*}
+\end{document}
