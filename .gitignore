@@ -3,5 +3,6 @@ _site/*
 *.o
 *~
 *.class
+.sass-cache
 
 

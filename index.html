@@ -1,22 +1,78 @@
 ---
 layout: default
-title: "[ quant67 ]"
+title: quant67
+tagline: Supporting tagline
 ---
+{% include JB/setup %}
 
-<link rel="stylesheet" type="text/css" href="/css/index.css" />
-
-<div id="home">
-    <ul class="posts">
-        {% for post in site.posts %}
-        <div class="IndexP">
-            <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
-            <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 220 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 220 }}{% endif %}</p>
-            <div class="date">
-                <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-            </div>
-            <a class="ContinueRead" href="{{ site.url }}{{ post.url }}">阅读全文</a>
-        </div>
-        {% endfor %}
-    </ul>
+<!-- 遍历分页后的文章 -->
+{% for post in paginator.posts %}
+<div class="indexPost">
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p class="author">
+    <span class="date">{{ post.date | date_to_string }}</span>
+    </p>
+    <div class="content">
+        {{ post.content }}
+    </div>
 </div>
+{% endfor %}
 
+<!--下边的 HTML 片段是第一页，他除自己外，为每个页面生成了链接。-->
+<div id="post-pagination" class="pagination">
+
+    <ul class="pages">
+
+        <li>
+        {% if paginator.previous_page %}
+        <p class="previous">
+        {% if paginator.previous_page == 1 %}
+        <a href="/">回去<i class="fa fa-chevron-left"></i></a>
+        {% else %}
+        <a href="{{ paginator.previous_page_path }}">回去</a>
+        {% endif %}
+        </p>
+        {% else %}
+        <p class="previous disabled">
+        <span>回去</span>
+        </p>
+        {% endif %}
+
+        </li>
+
+
+        <li class="page">
+        {% if paginator.page == 1 %}
+        <span class="current-page">1</span>
+        {% else %}
+        <a href="/">1</a>
+        {% endif %}
+        </li>
+
+        {% for count in (2..paginator.total_pages) %}
+        <li class="page">
+        {% if count == paginator.page %}
+        <span class="current-page">{{ count }}</span>
+        {% else %}
+        <a href="/page{{ count }}">{{ count }}</a>
+        {% endif %}
+        </li>
+        {% endfor %}
+
+
+        <li>
+        {% if paginator.next_page %}
+        <p class="next">
+        <a href="{{ paginator.next_page_path }}">向前</a>
+        </p>
+        {% else %}
+        <p class="next disabled">
+        <span>向前</span>
+        </p>
+        {% endif %}
+        </li>
+
+
+    </ul>
+
+</div>
