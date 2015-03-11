@@ -38,7 +38,7 @@ pre {padding-left:0.4em;}
         <span class="Type">background-color</span>: <span class="Constant">red</span>;
     <span class="Identifier">}</span>
 <span class="Identifier">}</span>
-<span class="Special">@media</span> <span class="Special">screen</span> ans (max-width: 768px) <span class="Identifier">{</span>
+<span class="Special">@media</span> <span class="Special">screen</span> and (max-width: 768px) <span class="Identifier">{</span>
     body <span class="Identifier">{</span>
         <span class="Type">background-color</span>: <span class="Constant">orange</span>;
     <span class="Identifier">}</span>
