@@ -129,7 +129,7 @@ JB :
   # where [HELPER] is the name of the helper you are overriding.
   
 
-paginate: 5
+paginate: 7
 paginate_path: "page:num"
 
 sass:
