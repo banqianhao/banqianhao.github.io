@@ -248,7 +248,7 @@ struct Node {
 };
 
 struct AC {
-public:
+private:
     Node *root;
     void _insert(Node * const root, const char * const p) {
         if (*p == '\0') {
