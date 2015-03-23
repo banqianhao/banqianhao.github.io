@@ -21,7 +21,7 @@ tags: ["Design Patterns"]
 ###The Observer Pattern defined: the class diagram
 
 
-![opd](/DL/observerpattern/opd.png)
+![opd](/DL/observerPattern/opd.png)
 
 
 `notifyObserver()` may call `update()` of every Observer that had been registered.
