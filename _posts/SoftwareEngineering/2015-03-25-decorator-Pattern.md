@@ -5,7 +5,7 @@ category: "Design Patterns"
 tags: ["Design Patterns"]
 ---
 
-###Constructing d drink order with Decorators
+###Constructing a drink order with Decorators
 
 We start with our DarkRoast object.
 
