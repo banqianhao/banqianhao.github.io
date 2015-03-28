@@ -1,6 +1,6 @@
 ---
 layout: post
-title: the Decorator Pattern
+title: Design Patters--the Decorator Pattern
 category: "Design Patterns"
 tags: ["Design Patterns"]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design Pattern--Singleton Pattern
+title: Design Patterns--Singleton Pattern
 category: "Design Pattern"
 tags: ["Design Pattern"]
 ---
