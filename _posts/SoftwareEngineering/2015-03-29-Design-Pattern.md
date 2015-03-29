@@ -5,25 +5,27 @@ category: "Design Patterns"
 tags: ["Design Patterns"]
 ---
 
-<ul>
+Table of Contents:
+
+<ul style="list-style:none">
     <li>
-        <a href="#ObserverPattern">Observer Pattern</a>
+        <a href="#ObserverPattern" style="color:#585eaa"><i class="fa fa-link"></i> Observer Pattern</a>
     </li>
     <li>
-        <a href="#DecoratorPattern">Decorator Pattern</a>
+        <a href="#DecoratorPattern" style="color:#585eaa"><i class="fa fa-link"></i> Decorator Pattern</a>
     </li>
     <li>
-        <a href="#CommandPattern">Command Pattern</a>
+        <a href="#CommandPattern" style="color:#585eaa"><i class="fa fa-link"></i> Command Pattern</a>
     </li>
     <li>
-        <a href="#SingletonPattern">Singleton Pattern</a>
+        <a href="#SingletonPattern" style="color:#585eaa"><i class="fa fa-link"></i> Singleton Pattern</a>
     </li>
     <li>
-        <a href="#AdapterPattern">Observer Pattern</a>
+        <a href="#AdapterPattern" style="color:#585eaa"><i class="fa fa-link"></i> AdapterPattern Pattern</a>
     </li>
 </ul>
 
-#<a name="ObserverPattern">Design Patterns--Observer Pattern</a>
+#<a style="color:#000" name="ObserverPattern"><i class="fa fa-link"></i> Design Patterns--Observer Pattern</a>
 
 ###You know the newspaper or magazine subscriptions work:
 
@@ -46,7 +48,7 @@ tags: ["Design Patterns"]
 `notifyObserver()` may call `update()` of every Observer that had been registered.
 
 
-#<a name="DecoratorPattern">Decorator Pattern</a>
+#<a style="color:#000" name="DecoratorPattern"><i class="fa fa-link"></i> Decorator Pattern</a>
 
 ###Constructing a drink order with Decorators
 
@@ -135,7 +137,7 @@ public class OpenCoffee {
 {% endhighlight %}
 
 
-#<a name="CommandPattern">Command Pattern</a>
+#<a style="color:#000" name="CommandPattern"><i class="fa fa-link"></i> Command Pattern</a>
 
 In object-oriented programming, the command pattern is a behavioral design pattern in which an object is used to represent and encapsulate all the information needed to call a method at a later time. This information includes the method name, the object that owns the method and values for the method parameters.
 
@@ -205,7 +207,7 @@ public class Client {
 }
 {% endhighlight %}
 
-#<a name="SingletonPattern">Singleton Pattern</a>
+#<a style="color:#000" name="SingletonPattern"><i class="fa fa-link"></i> Singleton Pattern</a>
 
 There are many objects we only need one of: thread pools, caches, dialog, boxes, object that handle preferences and registry settings, objects used for logging, and objects that act as device drivers to devices like printers and graphics cards. In fact, for many of these types of objects, if we were to instantiate more than one we'd run into all sort of problems like incorrect program behavior, overuse of resources, or inconsistent results.
 
@@ -266,7 +268,7 @@ public class Singleton {
 
 
 
-#<a name="AdapterPattern">Adapter Pattern</a>
+#<a style="color:#000" name="AdapterPattern"><i class="fa fa-link"></i> Adapter Pattern</a>
 
 The Adapter Pattern converts the interface of a class into another interface the clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
 
