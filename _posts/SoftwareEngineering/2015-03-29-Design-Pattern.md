@@ -25,7 +25,7 @@ Table of Contents:
     </li>
 </ul>
 
-#<a style="color:#000" name="ObserverPattern"><i class="fa fa-link"></i> Design Patterns--Observer Pattern</a>
+#<a style="color:#000" name="ObserverPattern"><i class="fa fa-link"></i>Observer Pattern</a>
 
 ###You know the newspaper or magazine subscriptions work:
 
