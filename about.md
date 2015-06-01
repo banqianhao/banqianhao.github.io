@@ -13,3 +13,10 @@ title: About
 此致敬礼。
 
 
+<div style="float: right;font-size:1.4em;">
+<a href="mailto:liaotonglang@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+<a href="https://github.com/quant67" target="_blank"><i class="fa fa-github"></i></a>
+<a href="https://twitter.com/liaotonglang" target="_blank"><i class="fa fa-twitter"></i></a>
+<a href="http://weibo.com/xieruantan" target="_blank"><i class="fa fa-weibo"></i></a>
+</div>
+
