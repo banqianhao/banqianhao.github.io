@@ -50,8 +50,8 @@ $$
 
 $$
 \begin{align*}
-  P(F_{n-2}) =&  P(E_{n-2}\cap F_{n-3})=P(E_{n-2} | F_{n-3})\cdot P(F_{n-3}) \\
-  =& P(E_{n-2}|F_{n-3})\cdot P(E_{n-3}|E_{n-4})\cdots P(E_2|F_1)\cdot P(F_1)  \\
+  P(F_{n-2}) =&  P\left(E_{n-2}\cap F_{n-3}\right)=P\left(E_{n-2} | F_{n-3}\right)\cdot P\left(F_{n-3}\right) \\
+  =& P\left(E_{n-2}|F_{n-3}\right)\cdot P\left(E_{n-3}|E_{n-4}\right)\cdots P\left(E_2|F_1\right)\cdot P\left(F_1\right)  \\
   \ge&\prod_{i=1}^{n-2} \left(1-\frac{2}{n-i+1}\right) = \prod_{i=1}^{n-2}\left(\frac{n-i-1}{n-i+1}\right) \\
   =& \left( \frac{n-2}{n} \right)\left( \frac{n-3}{n-1} \right)\left( \frac{n-4}{n-2} \right)\cdots \left( \frac{2}{4} \right)\left( \frac{1}{3} \right)\\
   =&\frac{2}{n(n-1)}.
